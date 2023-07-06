@@ -39,3 +39,10 @@ suite.add("Instantiating new TextDecoder every function call", function () {
 });
 
 suite.run();
+
+/**
+ * Results 👇
+ * Using TextDecoder instance cached in class x 1,297,920 ops/sec ±2.57% (76 runs sampled)
+ * Instantiating new TextDecoder every function call x 1,007,902 ops/sec ±1.79% (93 runs sampled)
+ * Fastest is: 👉 Using TextDecoder instance cached in class
+ */
